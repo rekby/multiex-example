@@ -1,0 +1,13 @@
+== multiex-example ==
+
+Simple example of multiex usage.
+
+Try to compile it, then execute:
+./multiex-example --multiex-command=multiex install
+./test-f1
+./test-f2
+./test-f1 asd adf asdf
+
+
+In the example f1 and f2 - functions from one package. But it can be any functions in any package.
+Destination functions can parse os.Args as usual, without modification.
