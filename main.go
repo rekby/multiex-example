@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"github.com/rekby/multiex"
 	"os"
+
+    _ "github.com/rekby/multiex-example/side"
 )
 
 func f1() {

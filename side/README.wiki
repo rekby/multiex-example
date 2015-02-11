@@ -1,0 +1,11 @@
+The module can compile standalone:
+
+ cd main; go build main.go
+
+And as part of common binary
+
+When module compiled standalone - it init multiex module, but it is work or have any effect - Main function called directly
+from main function im main package.
+
+main.go for standalone compile is simple and universal and can be apply for every utility without modifications.
+It do only call Main functin from parent package.
