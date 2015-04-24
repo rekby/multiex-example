@@ -4,8 +4,22 @@ The module can compile standalone:
 
 And as part of common binary
 
-When module compiled standalone - it init multiex module, but it is work or have any effect - Main function called directly
-from main function im main package.
+When module compiled standalone - it init multiex module, but it is work or have any effect - Main function of parent
+foldercalled directly from main function in main package.
 
 main.go for standalone compile is simple and universal and can be apply for every utility without modifications.
 It do only call Main functin from parent package.
+
+
+Модуль может компилироваться как отдельно выполняемый бинарник
+
+  cd main; go build main.go
+
+И как часть общей библиотеки
+
+Когда модуль скомпилирован как бинарник - модуль multiex инициализируется, но не оказывает никакого влияние на выполнение
+программы - т.к. сразу вызывается функция Main из родительской папки.
+
+main.go для компиляции в отдельный бинарник - простой и универсальный. Он может быть просто скопирован в папку любой утилиты
+без изменений для её сборки в отдельный бинарник, независимый от других утилит которые могут включаться в multiex при общей
+сборке.

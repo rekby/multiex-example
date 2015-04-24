@@ -3,7 +3,7 @@
 Simple example of multiex usage.
 
 Try to compile it, then execute:
- ./multiex-example --multiex-command=multiex install
+ ./multiex-example multiex install
  ./test-f1
  ./test-f2
  ./test-f1 asd adf asdf
@@ -11,3 +11,17 @@ Try to compile it, then execute:
 
 In the example f1 and f2 - functions from one package. But it can be any functions in any package.
 Destination functions can parse os.Args as usual, without modification.
+
+== пример использования multiex ==
+
+Простой пример использования multiex.
+
+Попробуйте скомпилировать и затем выполнить:
+  ./multiex-example multiex install
+  ./test-f1
+  ./test-f2
+  ./test-f1 asd adf asdf
+
+В примере функции f1 и f2 - разные функции, зарегистрированные из одного пакета. Но это могут быть любые функции из любых
+пакетов. Вызываемая функция сама должна разобрать аргументы os.Args, если ей нужно обрабатывать параметры - так же
+как это обычно делается при создании функции main.
