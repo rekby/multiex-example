@@ -19,7 +19,7 @@ func f2() {
 }
 
 func main() {
-	multiex.Register(multiex.ExecutorDescribe{Name: "test-f1", Function: f1})
-	multiex.Register(multiex.ExecutorDescribe{Name: "test-f2", Function: f2})
+	multiex.Register(multiex.ExecutorDescribe{Name: "test-f1", Function: f1, Describtion: "Test function 1"})
+	multiex.Register(multiex.ExecutorDescribe{Name: "test-f2", Function: f2, Describtion: "Test function 2"})
 	multiex.Main()
 }

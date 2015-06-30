@@ -6,7 +6,7 @@ import (
 )
 
 func init(){
-    multiex.Register(multiex.ExecutorDescribe{Name: "side", Function: Main})
+    multiex.Register(multiex.ExecutorDescribe{Name: "side", Function: Main, Describtion:"Function, registered from module init."})
 }
 
 func Main(){
